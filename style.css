@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f7f5;
+    color: #333;
+    line-height: 1.6;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-ifpb {
+    height: 100px;
+}
+
+.logo-brasao {
+    height: 100px;
+}
+.formula {
+    background-color: #f0f7ff;
+    border-left: 4px solid #008020;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #222;
+}
+
+.header-texto {
+    flex: 1;
+    text-align: center;
+    max-width: 600px;
+}
+
+header {
+    background-color: #19882c;
+    background-color: #0A5517;
+    background-image: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header .subtitulo {
+    font-size: 1em;
+    font-weight: normal;
+    color: #cde2f2;
+    text-align: center;
+}
+
+.conteudo {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #008020;
+    margin-bottom: 10px;
+    border-left: 4px solid #008020;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+    text-indent: 2em;
+}
+
+.autores {
+    margin-bottom: 20px;
+}
+
+.autores p {
+    text-align: right;
+    width: 100%;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .conteudo {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
