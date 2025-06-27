@@ -17,7 +17,6 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .logo-ifpb {
@@ -122,27 +121,38 @@ img {
     margin: 10px auto;
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-    }
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* <- FORÇA lado a lado sempre */
+    flex-direction: row;
+}
 
+.logo-ifpb,
+.logo-brasao {
+    height: 100px;
+}
+
+@media (max-width: 768px) {
     .logo-ifpb,
     .logo-brasao {
-        height: 70px;
+        height: 60px;
     }
 
     .header-texto {
-        flex: 1 1 100%;
-        padding: 10px 0;
-        order: 0;
+        flex: 1;
+        padding: 0 10px;
+        text-align: center;
     }
 
-    body {
-        padding: 0 10px;
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .header-texto .subtitulo {
+        font-size: 0.9em;
     }
 
     .conteudo {
@@ -160,14 +170,6 @@ img {
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.3em;
-    }
-
-    .header-texto .subtitulo {
-        font-size: 0.9em;
-    }
-
     p {
         text-align: left;
     }
