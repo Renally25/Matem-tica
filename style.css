@@ -115,3 +115,62 @@ p {
         font-size: 1.3em;
     }
 }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-ifpb,
+    .logo-brasao {
+        height: 70px;
+    }
+
+    .header-texto {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    body {
+        padding: 0 10px;
+    }
+
+    .conteudo {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    section {
+        margin-bottom: 25px;
+    }
+
+    p {
+        text-indent: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    .header-texto .subtitulo {
+        font-size: 0.9em;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
