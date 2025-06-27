@@ -12,28 +12,26 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: nowrap; /* Mantém lado a lado mesmo em telas pequenas */
+    flex-direction: row;
 }
 
-.logo-ifpb {
-    height: 100px;
-}
-
+.logo-ifpb,
 .logo-brasao {
     height: 100px;
-}
-.formula {
-    background-color: #f0f7ff;
-    border-left: 4px solid #008020;
-    padding: 10px 15px;
-    margin: 15px 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    color: #222;
 }
 
 .header-texto {
@@ -43,7 +41,6 @@ body {
 }
 
 header {
-    background-color: #19882c;
     background-color: #0A5517;
     background-image: radial-gradient(ellipse at center, #19882c 1%, #025310 100%);
     color: white;
@@ -101,40 +98,17 @@ p {
     margin: 4px 0;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    .conteudo {
-        padding: 15px;
-    }
-
-    h2 {
-        font-size: 1.3em;
-    }
-}
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+.formula {
+    background-color: #f0f7ff;
+    border-left: 4px solid #008020;
+    padding: 10px 15px;
+    margin: 15px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #222;
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: nowrap; /* <- FORÇA lado a lado sempre */
-    flex-direction: row;
-}
-
-.logo-ifpb,
-.logo-brasao {
-    height: 100px;
-}
-
+/* Responsivo */
 @media (max-width: 768px) {
     .logo-ifpb,
     .logo-brasao {
