@@ -124,8 +124,9 @@ img {
 
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
         text-align: center;
     }
 
@@ -135,8 +136,9 @@ img {
     }
 
     .header-texto {
-        max-width: 100%;
-        padding: 0 10px;
+        flex: 1 1 100%;
+        padding: 10px 0;
+        order: 0;
     }
 
     body {
